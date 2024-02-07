@@ -1,95 +1,110 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+
+import ImageSlideshow from "@/components/images/image-slideshow";
+import classes from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <header className={classes.header}>
+        <div className={classes.slideshow}>
+          <ImageSlideshow />
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+        <div>
+          <div className={classes.hero}>
+            <h1>FishTrackr</h1>
+            <p>Add your personal catch </p>
+          </div>
+          <div className={classes.cta}>
+            <Link href="/community">Add new catch</Link>
+            <Link href="/meals">Check your catches</Link>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section className={classes.section}>
+          <h2>Hello Anglers! </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Embark on a seamless fishing adventure with our revolutionary app –
+            FishTrackr! Say goodbye to the hassle of manually recording your
+            catches and dive into a new era of angling excitement.
           </p>
-        </a>
-      </div>
-    </main>
+        </section>
+
+        <section className={classes.section}>
+          <h2>🌊 Explore Effortlessly</h2>
+          <p>
+            Whether you&apos;re a seasoned pro or a weekend warrior, FishTrackr
+            makes tracking your fishing escapades a breeze. Log each
+            exhilarating catch with just a few taps.
+          </p>
+        </section>
+
+        <section className={classes.section}>
+          <h2>📸 Capture the Moment</h2>
+          <p>
+            Snap photos of your prized catches and document the details right on
+            the spot. Our app preserves the memories of your biggest triumphs,
+            ensuring that each fish tale is told accurately.
+          </p>
+        </section>
+
+        <section className={classes.section}>
+          <h2>📍 Location Intelligence</h2>
+          <p>
+            Pinpoint the exact locations of your catches with our advanced GPS
+            tracking. Keep a personal fishing journal, and discover the hottest
+            spots where the big ones bite.
+          </p>
+        </section>
+
+        <section className={classes.section}>
+          <h2>📊 Statistical Insights</h2>
+          <p>
+            Gain valuable insights into your angling prowess with our
+            comprehensive statistics. Track your success rates, favorite fishing
+            spots, and preferred bait choices to enhance your future fishing
+            strategies.
+          </p>
+        </section>
+
+        <section className={classes.section}>
+          <h2>📱 User-Friendly Interface</h2>
+          <p>
+            No need for a degree in technology! FishTrackr boasts a
+            user-friendly interface designed with anglers in mind. It&apos;s as
+            easy as casting a line – just open the app and start reeling in your
+            data.
+          </p>
+        </section>
+
+        <section className={classes.section}>
+          <h2>🔒 Privacy and Security</h2>
+          <p>
+            Rest easy knowing that your fishing secrets are safe with us.
+            FishTrackr prioritizes your privacy and ensures that your fishing
+            data is accessible only to you.
+          </p>
+        </section>
+        <section className={classes.section}>
+          <h2>🌟 Join the Fishing Revolution</h2>
+          <p>
+            Become part of a vibrant community of anglers sharing their passion
+            on FishTrackr. Connect with fellow fishing enthusiasts, exchange
+            tips, and celebrate each other&apos;s fishing triumphs.
+          </p>
+        </section>
+        <section className={classes.section}>
+          <p>
+            Ready to elevate your fishing experience? Download FishTrackr now
+            and turn every fishing trip into an unforgettable story. Your
+            catches, your adventure, and your legacy – all in the palm of your
+            hand!
+          </p>
+          <br></br>
+          <p>Happy fishing! 🎣📱 #FishTrackr #ReelInSuccess</p>
+        </section>
+      </main>
+    </>
   );
 }
