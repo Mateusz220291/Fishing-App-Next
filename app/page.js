@@ -16,8 +16,8 @@ export default function Home() {
             <p>Add your personal catch </p>
           </div>
           <div className={classes.cta}>
-            <Link href="/community">Add new catch</Link>
-            <Link href="/meals">Check your catches</Link>
+            <Link href="/catches/share">Add new catch</Link>
+            <Link href="/catches">Check your catches</Link>
           </div>
         </div>
       </header>
