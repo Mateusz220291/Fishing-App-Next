@@ -1,26 +1,32 @@
 import Link from "next/link";
-// import Image from "next/image";
+import Image from "next/image";
 
 import classes from "./catch-item.module.css";
 
-export default function CatchItem({ title, slug, image, summary, creator }) {
+export default function CatchItem({
+  title,
+  slug,
+  image,
+  length,
+  date,
+  weight,
+  place,
+  remarks,
+}) {
   return (
     <article className={classes.meal}>
       <header>
         <div className={classes.image}>
-          {/* <Image
-            src={`https://maxschwarzmueller-nextjs-demo-users-image.s3.amazonaws.com/${image}`}
-            alt={title}
-            fill
-          /> */}
+          <Image src={image} alt={title} fill />
         </div>
         <div className={classes.headerText}>
           <h2>{title}</h2>
-          <p>by {creator}</p>
+          <p>weight {weight} kg</p>
+          <p>length {length} cm</p>
         </div>
       </header>
       <div className={classes.content}>
-        <p className={classes.summary}>{summary}</p>
+        <p className={classes.summary}>{date}</p>
         <div className={classes.actions}>
           <Link href={`/catches/${slug}`}>View Details</Link>
         </div>

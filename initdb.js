@@ -1,12 +1,12 @@
 const sql = require("better-sqlite3");
-const db = sql("fishes.db");
+const db = sql("catches.db");
 
 const dummyCatches = [
   {
     title: "Pike",
     slug: "21-03-2023-1",
-    image: "pike.jpg",
-    lenght: "100",
+    image: "/images/pike.jpg",
+    length: "100",
     date: "21-03-2023",
     weight: "8",
     place: "Vistula River",
@@ -15,8 +15,8 @@ const dummyCatches = [
   {
     title: "Zander",
     slug: "21-03-2023-2",
-    image: "zander.jpg",
-    lenght: "100",
+    image: "/images/zander.jpg",
+    length: "100",
     date: "21-03-2023",
     weight: "8",
     place: "Vistula River",
@@ -25,8 +25,8 @@ const dummyCatches = [
   {
     title: "Catfish",
     slug: "21-03-2023-3",
-    image: "catfish.jpg",
-    lenght: "100",
+    image: "/images/catfish.jpg",
+    length: "100",
     date: "21-03-2023",
     weight: "8",
     place: "Vistula River",
@@ -35,8 +35,8 @@ const dummyCatches = [
   {
     title: "Perch",
     slug: "21-03-2023-4",
-    image: "perch.jpg",
-    lenght: "100",
+    image: "/images/perch.jpg",
+    length: "100",
     date: "21-03-2023",
     weight: "8",
     place: "Vistula River",
@@ -45,8 +45,8 @@ const dummyCatches = [
   {
     title: "Taimen",
     slug: "21-03-2023-5",
-    image: "taimen.jpg",
-    lenght: "100",
+    image: "/images/taimen.jpg",
+    length: "100",
     date: "21-03-2023",
     weight: "8",
     place: "Vistula River",
@@ -81,7 +81,7 @@ const dummyCatches = [
 
 db.prepare(
   `
-   CREATE TABLE IF NOT EXISTS meals (
+   CREATE TABLE IF NOT EXISTS catches (
        id INTEGER PRIMARY KEY AUTOINCREMENT,
        slug TEXT NOT NULL UNIQUE,
        title TEXT NOT NULL,
@@ -90,14 +90,14 @@ db.prepare(
        place TEXT NOT NULL,
        date TEXT NOT NULL,
        weight TEXT NOT NULL,
-       lenght TEXT NOT NULL
+       length TEXT NOT NULL
     )
 `
 ).run();
 
 async function initData() {
   const stmt = db.prepare(`
-      INSERT INTO meals VALUES (
+      INSERT INTO catches VALUES (
          null,
          @slug,
          @title,
@@ -106,7 +106,7 @@ async function initData() {
          @place,
          @date,
          @weight,
-         @lenght
+         @length
       )
    `);
 
