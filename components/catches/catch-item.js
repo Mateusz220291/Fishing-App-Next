@@ -21,12 +21,12 @@ export default function CatchItem({
         </div>
         <div className={classes.headerText}>
           <h2>{title}</h2>
-          <p>weight {weight} kg</p>
-          <p>length {length} cm</p>
+          <p>weight: {weight} kg</p>
+          <p>length: {length} cm</p>
         </div>
       </header>
       <div className={classes.content}>
-        <p className={classes.summary}>{date}</p>
+        <p className={classes.summary}>Date: {date}</p>
         <div className={classes.actions}>
           <Link href={`/catches/${slug}`}>View Details</Link>
         </div>

@@ -11,9 +11,7 @@ export const metadata = {
 };
 
 async function Catches() {
-  console.log("Fetching meals");
   const catches = await getCatches();
-
   return <CatchesGrid catches={catches} />;
 }
 
