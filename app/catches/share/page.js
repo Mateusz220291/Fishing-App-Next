@@ -14,9 +14,9 @@ export default function ShareMealPage() {
     <>
       <header className={classes.header}>
         <h1>
-          Share your <span className={classes.highlight}>favorite meal</span>
+          Share your <span className={classes.highlight}>amazing catch</span>
         </h1>
-        <p>Or any other meal you feel needs sharing!</p>
+        <p>Or any other fish you feel needs reporting!</p>
       </header>
       <main className={classes.main}>
         <form className={classes.form}>
