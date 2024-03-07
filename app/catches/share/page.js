@@ -2,9 +2,9 @@
 
 import { useFormState } from "react-dom";
 
-// import ImagePicker from '@/components/meals/image-picker';
+import ImagePicker from "@/components/catches/image-picker";
 import classes from "./page.module.css";
-// import { shareMeal } from '@/lib/actions';
+import { shareCatch } from "@/lib/actions";
 import CatchFormSubmit from "@/components/catches/catch-form-submit";
 
 export default function ShareMealPage() {
@@ -19,7 +19,7 @@ export default function ShareMealPage() {
         <p>Or any other fish you feel needs reporting!</p>
       </header>
       <main className={classes.main}>
-        <form className={classes.form}>
+        <form className={classes.form} action={shareCatch}>
           <div className={classes.row}>
             <p>
               <label htmlFor="species">Species</label>
@@ -71,7 +71,7 @@ export default function ShareMealPage() {
             </label>
             <textarea id="remarks" name="remarks" rows="10" required></textarea>
           </p>
-          {/* <ImagePicker label="Your image" name="image" /> */}
+          <ImagePicker label="Your image" name="image" />
           {/* {state.message && <p>{state.message}</p>} */}
           <p className={classes.actions}>
             <CatchFormSubmit />

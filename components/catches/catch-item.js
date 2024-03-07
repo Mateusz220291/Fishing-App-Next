@@ -4,7 +4,7 @@ import Image from "next/image";
 import classes from "./catch-item.module.css";
 
 export default function CatchItem({
-  title,
+  species,
   slug,
   image,
   length,
@@ -17,10 +17,10 @@ export default function CatchItem({
     <article className={classes.meal}>
       <header>
         <div className={classes.image}>
-          <Image src={image} alt={title} fill />
+          <Image src={image} alt={species} fill />
         </div>
         <div className={classes.headerText}>
-          <h2>{title}</h2>
+          <h2>{species}</h2>
           <p>weight: {weight} kg</p>
           <p>length: {length} cm</p>
         </div>

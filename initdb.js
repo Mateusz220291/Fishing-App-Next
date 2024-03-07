@@ -3,7 +3,7 @@ const db = sql("catches.db");
 
 const dummyCatches = [
   {
-    title: "Pike",
+    species: "Pike",
     slug: "21-03-2023-1",
     image: "/images/pike.jpg",
     length: "100",
@@ -13,7 +13,7 @@ const dummyCatches = [
     remarks: "clear water, strong wind",
   },
   {
-    title: "Zander",
+    species: "Zander",
     slug: "21-03-2023-2",
     image: "/images/zander.jpg",
     length: "100",
@@ -23,7 +23,7 @@ const dummyCatches = [
     remarks: "clear water, strong wind",
   },
   {
-    title: "Catfish",
+    species: "Catfish",
     slug: "21-03-2023-3",
     image: "/images/catfish.jpg",
     length: "100",
@@ -33,7 +33,7 @@ const dummyCatches = [
     remarks: "clear water, strong wind",
   },
   {
-    title: "Perch",
+    species: "Perch",
     slug: "21-03-2023-4",
     image: "/images/perch.jpg",
     length: "100",
@@ -43,7 +43,7 @@ const dummyCatches = [
     remarks: "clear water, strong wind",
   },
   {
-    title: "Taimen",
+    species: "Taimen",
     slug: "21-03-2023-5",
     image: "/images/taimen.jpg",
     length: "100",
@@ -84,7 +84,7 @@ db.prepare(
    CREATE TABLE IF NOT EXISTS catches (
        id INTEGER PRIMARY KEY AUTOINCREMENT,
        slug TEXT NOT NULL UNIQUE,
-       title TEXT NOT NULL,
+       species TEXT NOT NULL,
        image TEXT NOT NULL,
        remarks TEXT NOT NULL,
        place TEXT NOT NULL,
@@ -100,7 +100,7 @@ async function initData() {
       INSERT INTO catches VALUES (
          null,
          @slug,
-         @title,
+         @species,
          @image,
          @remarks,
          @place,
