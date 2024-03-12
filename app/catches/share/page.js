@@ -7,8 +7,8 @@ import classes from "./page.module.css";
 import { shareCatch } from "@/lib/actions";
 import CatchFormSubmit from "@/components/catches/catch-form-submit";
 
-export default function ShareMealPage() {
-  // const [state, formAction] = useFormState(shareMeal, { message: null });
+export default function ShareCatchPage() {
+  const [state, formAction] = useFormState(shareCatch, { message: null });
 
   return (
     <>
@@ -19,7 +19,7 @@ export default function ShareMealPage() {
         <p>Or any other fish you feel needs reporting!</p>
       </header>
       <main className={classes.main}>
-        <form className={classes.form} action={shareCatch}>
+        <form className={classes.form} action={formAction}>
           <div className={classes.row}>
             <p>
               <label htmlFor="species">Species</label>
@@ -72,7 +72,7 @@ export default function ShareMealPage() {
             <textarea id="remarks" name="remarks" rows="10" required></textarea>
           </p>
           <ImagePicker label="Your image" name="image" />
-          {/* {state.message && <p>{state.message}</p>} */}
+          {state.message && <p>{state.message}</p>}
           <p className={classes.actions}>
             <CatchFormSubmit />
           </p>

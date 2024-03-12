@@ -28,6 +28,7 @@ export default function CatchItem({
       <div className={classes.content}>
         <p className={classes.summary}>Date: {date}</p>
         <div className={classes.actions}>
+          <button>REMOVE</button>
           <Link href={`/catches/${slug}`}>View Details</Link>
         </div>
       </div>
