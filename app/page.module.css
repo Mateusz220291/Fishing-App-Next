@@ -19,10 +19,10 @@
 .hero h1 {
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #f9572a, #ffc905);
+  background: linear-gradient(90deg, #079b02, #76f73a);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -39,7 +39,7 @@
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  background: linear-gradient(90deg, #079b02, #62f51e);
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
@@ -47,20 +47,31 @@
 
 .cta a:hover,
 .cta a:active {
-  background: linear-gradient(90deg, #fd4715, #f9b241);
+  background: linear-gradient(90deg, #07c500, #89f856);
 }
 
 .cta a:first-child {
   background: transparent;
   font-weight: normal;
-  color: #ff9b05;
+  color: #07c500;
   padding-left: 0;
 }
 
 .cta a:first-child:hover,
 .cta a:first-child:active {
   background: transparent;
-  color: #f9b241;
+  color: #26f71f;
+}
+
+.grid {
+  width: 90%;
+  max-width: 90rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+  margin: 2rem auto;
+  list-style: none;
+  padding: 0;
 }
 
 .section {
