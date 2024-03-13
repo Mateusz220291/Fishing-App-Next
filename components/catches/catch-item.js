@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import classes from "./catch-item.module.css";
+import DeleteCatchBtn from "./catch-remove-btn";
 
 export default function CatchItem({
   species,
@@ -28,7 +29,7 @@ export default function CatchItem({
       <div className={classes.content}>
         <p className={classes.summary}>Date: {date}</p>
         <div className={classes.actions}>
-          <button>REMOVE</button>
+          <DeleteCatchBtn key={slug} slug={slug}></DeleteCatchBtn>
           <Link href={`/catches/${slug}`}>View Details</Link>
         </div>
       </div>
