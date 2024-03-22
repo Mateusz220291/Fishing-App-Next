@@ -31,61 +31,84 @@ export default function Home() {
           </p>
         </section>
         <div className={classes.grid}>
-          <section className={classes.section}>
-            <h2>🌊 Explore Effortlessly</h2>
-            <p>
-              Whether you&apos;re a seasoned pro or a weekend warrior,
-              FishTrackr makes tracking your fishing escapades a breeze. Log
-              each exhilarating catch with just a few taps.
-            </p>
-          </section>
+          <div className={classes.card}>
+            <div className={classes.background}></div>
+            <div className={classes.content}>
+              <span>🌊</span>
+              <h2> Explore Effortlessly</h2>
+              <p>
+                Whether you&apos;re a seasoned pro or a weekend warrior,
+                FishTrackr makes tracking your fishing escapades a breeze. Log
+                each exhilarating catch with just a few taps.
+              </p>
+            </div>
+          </div>
 
-          <section className={classes.section}>
-            <h2>📸 Capture the Moment</h2>
-            <p>
-              Snap photos of your prized catches and document the details right
-              on the spot. Our app preserves the memories of your biggest
-              triumphs, ensuring that each fish tale is told accurately.
-            </p>
-          </section>
+          <div className={classes.card}>
+            <div className={classes.background}></div>
+            <div className={classes.content}>
+              <span>📸 </span>
+              <h2>Capture the Moment</h2>
+              <p>
+                Snap photos of your prized catches and document the details
+                right on the spot. Our app preserves the memories of your
+                biggest triumphs, ensuring that each fish tale is told
+                accurately.
+              </p>
+            </div>
+          </div>
 
-          <section className={classes.section}>
-            <h2>📍 Location Intelligence</h2>
-            <p>
-              Pinpoint the exact locations of your catches with our advanced GPS
-              tracking. Keep a personal fishing journal, and discover the
-              hottest spots where the big ones bite.
-            </p>
-          </section>
+          <div className={classes.card}>
+            <div className={classes.background}></div>
+            <div className={classes.content}>
+              <span>📍 </span>
+              <h2>Location Intelligence</h2>
+              <p>
+                Pinpoint the exact locations of your catches with our advanced
+                GPS tracking. Keep a personal fishing journal, and discover the
+                hottest spots where the big ones bite.
+              </p>
+            </div>
+          </div>
 
-          <section className={classes.section}>
-            <h2>📊 Statistical Insights</h2>
-            <p>
-              Gain valuable insights into your angling prowess with our
-              comprehensive statistics. Track your success rates, favorite
-              fishing spots, and preferred bait choices to enhance your future
-              fishing strategies.
-            </p>
-          </section>
-
-          <section className={classes.section}>
-            <h2>📱 User-Friendly Interface</h2>
-            <p>
-              No need for a degree in technology! FishTrackr boasts a
-              user-friendly interface designed with anglers in mind. It&apos;s
-              as easy as casting a line – just open the app and start reeling in
-              your data.
-            </p>
-          </section>
-
-          <section className={classes.section}>
-            <h2>🔒 Privacy and Security</h2>
-            <p>
-              Rest easy knowing that your fishing secrets are safe with us.
-              FishTrackr prioritizes your privacy and ensures that your fishing
-              data is accessible only to you.
-            </p>
-          </section>
+          <div className={classes.card}>
+            <div className={classes.background}></div>
+            <div className={classes.content}>
+              <span>📊</span>
+              <h2> Statistical Insights</h2>
+              <p>
+                Gain valuable insights into your angling prowess with our
+                comprehensive statistics. Track your success rates, favorite
+                fishing spots, and preferred bait choices to enhance your future
+                fishing strategies.
+              </p>
+            </div>
+          </div>
+          <div className={classes.card}>
+            <div className={classes.background}></div>
+            <div className={classes.content}>
+              <span>📱</span>
+              <h2> User-Friendly Interface</h2>
+              <p>
+                No need for a degree in technology! FishTrackr boasts a
+                user-friendly interface designed with anglers in mind. It&apos;s
+                as easy as casting a line – just open the app and start reeling
+                in your data.
+              </p>
+            </div>
+          </div>
+          <div className={classes.card}>
+            <div className={classes.background}></div>
+            <div className={classes.content}>
+              <span>🔒</span>
+              <h2> Privacy and Security</h2>
+              <p>
+                Rest easy knowing that your fishing secrets are safe with us.
+                FishTrackr prioritizes your privacy and ensures that your
+                fishing data is accessible only to you.
+              </p>
+            </div>
+          </div>
         </div>
 
         <section className={classes.section}>

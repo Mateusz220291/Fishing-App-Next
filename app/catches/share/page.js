@@ -25,11 +25,11 @@ export default function ShareCatchPage() {
               <label htmlFor="species">Species</label>
               <select id="species" name="species" required>
                 <option value="">Choose your species</option>
-                <option value="pike">Pike</option>
-                <option value="zander">Zander</option>
-                <option value="perch">Perch</option>
-                <option value="catfish">Catfish</option>
-                <option value="taimen">Taimen</option>
+                <option value="Pike">Pike</option>
+                <option value="Zander">Zander</option>
+                <option value="Perch">Perch</option>
+                <option value="Catfish">Catfish</option>
+                <option value="Taimen">Taimen</option>
               </select>
             </p>
             <p>
