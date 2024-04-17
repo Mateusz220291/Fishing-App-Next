@@ -25,6 +25,16 @@
   color: white;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex label {
+  color: red;
+}
+
 .form {
   max-width: 50rem;
 }
@@ -51,6 +61,12 @@
   font-size: 1.25rem;
   font-family: "Montserrat", sans-serif;
   color: #ddd6cb;
+}
+
+.form input[type="checkbox"] {
+  width: auto;
+  margin-bottom: 0.5rem;
+  margin-right: 5px;
 }
 
 .form input,

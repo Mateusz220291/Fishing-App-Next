@@ -27,7 +27,7 @@ const DeleteCatchBtn = ({ slug }) => {
             <span className={classes.close} onClick={closeModal}>
               &times;
             </span>
-            <p>Are you sure you want to delete this fish</p>
+            <p>Are you sure you want to delete this fish?</p>
             <button onClick={handleDelete}>Yes</button>
             <button onClick={closeModal}>No</button>
           </div>

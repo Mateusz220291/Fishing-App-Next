@@ -27,6 +27,12 @@
   font-style: italic;
 }
 
+.headerText div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .meal h2,
 .meal p {
   margin: 0;

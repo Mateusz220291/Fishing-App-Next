@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import classes from "./catch-item.module.css";
 import DeleteCatchBtn from "./catch-remove-btn";
+import "../../public/images/released.png";
 
 export default function CatchItem({
   species,
@@ -11,8 +12,7 @@ export default function CatchItem({
   length,
   date,
   weight,
-  place,
-  remarks,
+  released,
 }) {
   return (
     <article className={classes.meal}>
@@ -21,7 +21,17 @@ export default function CatchItem({
           <Image src={image} alt={species} fill />
         </div>
         <div className={classes.headerText}>
-          <h2>{species}</h2>
+          <div>
+            <h2>{species}</h2>
+            {released && (
+              <Image
+                src="/images/released.png"
+                alt="released"
+                width={25}
+                height={25}
+              />
+            )}
+          </div>
           <p>weight: {weight} kg</p>
           <p>length: {length} cm</p>
         </div>

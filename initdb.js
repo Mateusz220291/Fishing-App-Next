@@ -10,6 +10,7 @@ const dummyCatches = [
     date: "21-03-2023",
     weight: "8",
     place: "Vistula River",
+    released: null,
     remarks: "clear water, strong wind",
   },
   {
@@ -20,6 +21,7 @@ const dummyCatches = [
     date: "21-03-2023",
     weight: "8",
     place: "Vistula River",
+    released: "on",
     remarks: "clear water, strong wind",
   },
   {
@@ -30,6 +32,7 @@ const dummyCatches = [
     date: "21-03-2023",
     weight: "8",
     place: "Vistula River",
+    released: null,
     remarks: "clear water, strong wind",
   },
   {
@@ -40,6 +43,7 @@ const dummyCatches = [
     date: "21-03-2023",
     weight: "8",
     place: "Vistula River",
+    released: "on",
     remarks: "clear water, strong wind",
   },
   {
@@ -50,33 +54,9 @@ const dummyCatches = [
     date: "21-03-2023",
     weight: "8",
     place: "Vistula River",
+    released: null,
     remarks: "clear water, strong wind",
   },
-  //   {
-  //     title: "Spicy Curry",
-  //     slug: "spicy-curry",
-  //     image: "curry.jpg",
-  //     summary:
-  //       "A rich and spicy curry, infused with exotic spices and creamy coconut milk.",
-  //     instructions: `
-  //       1. Chop vegetables:
-  //          Cut your choice of vegetables into bite-sized pieces.
-
-  //       2. Sauté vegetables:
-  //          In a pan with oil, sauté the vegetables until they start to soften.
-
-  //       3. Add curry paste:
-  //          Stir in 2 tablespoons of curry paste and cook for another minute.
-
-  //       4. Simmer with coconut milk:
-  //          Pour in 500ml of coconut milk and bring to a simmer. Let it cook for about 15 minutes.
-
-  //       5. Serve:
-  //          Enjoy this creamy curry with rice or bread.
-  //     `,
-  //     creator: "Max Schwarz",
-  //     creator_email: "max@example.com",
-  //   },
 ];
 
 db.prepare(
@@ -87,6 +67,7 @@ db.prepare(
        species TEXT NOT NULL,
        image TEXT NOT NULL,
        remarks TEXT NOT NULL,
+       released,
        place TEXT NOT NULL,
        date TEXT NOT NULL,
        weight TEXT NOT NULL,
@@ -103,6 +84,7 @@ async function initData() {
          @species,
          @image,
          @remarks,
+         @released,
          @place,
          @date,
          @weight,

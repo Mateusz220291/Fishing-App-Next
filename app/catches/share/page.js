@@ -71,6 +71,10 @@ export default function ShareCatchPage() {
             </label>
             <textarea id="remarks" name="remarks" rows="10" required></textarea>
           </p>
+          <div className={classes.flex}>
+            <input type="checkbox" id="released" name="released" />
+            <label for="released">Fish was released</label>
+          </div>
           <ImagePicker label="Your image" name="image" />
           {state.message && <p>{state.message}</p>}
           <p className={classes.actions}>
