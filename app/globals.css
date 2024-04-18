@@ -19,6 +19,10 @@ body {
   text-align: center;
 }
 
+button {
+  all: unset;
+}
+
 .not-found h1,
 .error h1 {
   font-size: 5rem;
@@ -26,7 +30,7 @@ body {
   font-weight: 900;
   color: #262626;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #079b02, #62f51e);
+  background: linear-gradient(90deg, #014faf, #3b69ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: cover;

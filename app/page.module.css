@@ -22,7 +22,7 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #079b02, #76f73a);
+  background: linear-gradient(90deg, #014faf, #3b69ff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -39,7 +39,7 @@
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  background: linear-gradient(90deg, #079b02, #62f51e);
+  background: linear-gradient(90deg, #014faf, #3b69ff);
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
@@ -47,20 +47,20 @@
 
 .cta a:hover,
 .cta a:active {
-  background: linear-gradient(90deg, #07c500, #89f856);
+  background: linear-gradient(90deg, #0052cc, #3284ff);
 }
 
 .cta a:first-child {
   background: transparent;
   font-weight: normal;
-  color: #07c500;
+  color: #0052cc;
   padding-left: 0;
 }
 
 .cta a:first-child:hover,
 .cta a:first-child:active {
   background: transparent;
-  color: #26f71f;
+  color: #eeeeee;
 }
 
 .grid {
@@ -96,7 +96,7 @@
   border-radius: 10px;
   margin: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(90deg, #079b02, #62f51e);
+  background: linear-gradient(90deg, #014faf, #3b69ff);
   max-width: 300px;
 }
 
