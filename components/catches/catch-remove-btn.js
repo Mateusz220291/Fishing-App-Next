@@ -28,8 +28,10 @@ const DeleteCatchBtn = ({ slug }) => {
               &times;
             </span>
             <p>Are you sure you want to delete this fish?</p>
-            <button onClick={handleDelete}>Yes</button>
-            <button onClick={closeModal}>No</button>
+            <div>
+              <button onClick={handleDelete}>Yes</button>
+              <button onClick={closeModal}>No</button>
+            </div>
           </div>
         </div>
       )}
